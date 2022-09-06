@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>Changement de couleur</title>
+		<meta charset="utf-8">
+	</head>
+	<body id="maPage">
+		<button onClick="changeColor()">Change Color</button>
+		<div id="myID">Hello World</div>
+		<script type='text/javascript'>
+			function TSombre() {
+				var element = document.getElementById("maPage");
+				element.style.backgroundColor = "#c5bcba";
+			}
+			
+			function TClair() {
+				var  element = document.getElementById("maPage");
+				element.style.backgroundColor = "#f7cbc1";
+			}
+			
+			theme = "clair";
+			TClair();
+			
+			function changeColor() {
+				if (theme == "clair") {
+					TSombre();
+					theme = "sombre";
+				}
+				else {
+					TClair();
+					theme = "clair";
+				}
+			}			
+
+		</script>
+	</body>
+</html>
